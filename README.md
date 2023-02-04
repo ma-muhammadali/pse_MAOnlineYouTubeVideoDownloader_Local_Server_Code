@@ -1,7 +1,7 @@
 ## MA Online YouTube Video Downloader
 
 ## Overview
-Do you Want to download any YouTube video, audio and video's transcript? No problem! Just type in the URL of the video and press the download button.
+Do you want to download any YouTube video, audio and video's transcript? No problem! Just type in the URL of the video and press the download button.
 
 MA Online YouTube Video Downloader is a simple flask webapp to download youtube videos in high quality. It is also capable to download audio and video's transcript.
 
@@ -55,6 +55,6 @@ pip install youtube_transcript_api
 
 ## Usage
 
-* run app.py in python terminal and then goto http://127.0.0.1:5000/
-* paste a youtube video url and click Start
+* Run app.py in python terminal and then goto http://127.0.0.1:5000/
+* Paste a youtube video url and click Start
 * Click Download Video, Download will start automatically
