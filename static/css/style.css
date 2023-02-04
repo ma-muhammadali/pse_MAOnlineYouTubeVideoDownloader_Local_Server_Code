@@ -1,0 +1,320 @@
+/* ------------------------------------------------- */
+/* BASE STYLES */
+/* ------------------------------------------------- */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    /*Fills the viewport*/
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    /*You have to include this in order to position other child items*/
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px;
+}
+
+body::after {
+    content: '';
+    display: block;
+}
+
+/* ------------------ */
+/* TYPOGRAPHY */
+/* ------------------ */
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: red;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1;
+    margin-top: 05px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+h1 span
+{
+    color: red;
+}
+
+/* ------------------ */
+/* Download Video Page Table */
+/* ------------------ */
+table
+{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    left: 100%;
+    margin: 8px 0;
+    text-align: center;
+    border-radius: 20px 20px;
+    
+}
+
+table:hover
+{
+    background-color: white;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+/* ------------------ */
+/* BUTTON */
+/* ------------------ */
+
+/* Dropdown menu */
+select,
+.btn {
+    background-color: yellowgreen;
+    color: black;
+    width: 20%;
+}
+
+
+
+.url-input {
+    padding: 10px 10px;
+    left: 100%;
+    margin: 8px 0;
+}
+
+.start-url-btn {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+
+.start-url-btn-trans {
+    position: absolute;
+    left: 70.5%;
+    top: 24%;
+    padding: 11.5px 20px;
+    width: 13%;
+    height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.start-url-btn-trans:hover 
+{
+    background-color: blue;
+    color: white;
+}
+
+
+.btn-download
+{
+    position: absolute;
+        left: 60%;
+        top: 60%;
+        padding: 11.5px 20px;
+        width: 20%;
+        height: 55px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        background-color: green;
+        color: white;
+}
+
+.btn-download:hover
+{
+    background-color: aquamarine;
+    color: black;
+}
+
+.btn-download-audio
+{
+    position: absolute;
+        left: 60%;
+        top: 60%;
+        padding: 11.5px 20px;
+        width: 20%;
+        height: 55px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        background-color: burlywood;
+        color: black;
+}
+
+.btn-download-audio:hover
+{
+    background-color: darkorange;
+    color: white;
+}
+
+
+.btn-download-transcript
+{
+    position: absolute;
+        left: 60%;
+        top: 65%;
+        padding: 11.5px 20px;
+        width: 20%;
+        height: 55px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        background-color: burlywood;
+        color: black;
+}
+
+.btn-download-transcript:hover
+{
+    background-color: salmon;
+    color: white;
+}
+
+.file-input
+{
+    position: relative;
+    left: 30%;
+    top: 25%;
+    padding: 11.5px 20px;
+    width: 20%;
+    height: 55px;
+}
+
+.upload-file-btn
+{
+    position: relative;
+    left: 35%;
+    top: 25%;
+    padding: 11.5px 20px;
+    width: 20%;
+    height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: salmon;
+    color: white;
+}
+
+.upload-file-btn:hover
+{
+    background-color: greenyellow;
+    color: black;
+}
+
+.btn-home
+{
+    position: absolute;
+        left: 58.5%;
+        top: 70%;
+        padding: 11.5px 20px    ;
+        width: 23%;
+        height: 55px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        background-color: gray;
+        color: white;
+}
+
+.btn-home:hover
+{
+    background-color: gainsboro;
+    color: black;
+}
+
+/* 
+.url-btn {
+    position:absolute;
+    left:85%;
+    top:0;
+    padding: 38px 20px;
+    width: 15%;
+}
+.url-btn:hover {
+    background-color: #b07c0c;
+    color: white;
+} */
+
+.url-input {
+    position:absolute;
+    width: 40%;
+    padding: 10px 20px;
+    left: 28%;
+    margin: 18px 25px;
+    border-radius: 15px;
+    border-color: yellowgreen;
+}
+
+.start-url-btn {
+    position: absolute;
+    left: 70%;
+    top: 24.5%;
+    padding: 11.5px 20px;
+    width: 13%;
+    height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.start-url-btn:hover
+{
+    background-color: green;
+    color: white; 
+}
+
+.url-btn:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.container
+{
+    border: 2px solid #dadada;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 40vh;
+   
+        
+}

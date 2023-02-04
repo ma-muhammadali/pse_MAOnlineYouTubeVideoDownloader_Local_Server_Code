@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTD - Online YouTube Video Downloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+
+    <!-- Display Home, YouTube to MP3,  YouTube to MP4, Bulk Download and Transcript Download Navigation Bar On Header Section-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index"><i class='fa fa-flask'></i>Online YTD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('audiodownload') }}">YouTube to MP3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('index') }}">YouTube to MP4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('bulkdownload') }}">Bulk Download</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('transcript') }}">Transcript Download</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+
+<div class="row">
+    <div class="col-md-12 text-center">
+      
+    </div>  
+</div>
+
+<!-- Display Video Thumbnil, Video Title, Size, Duration and Audio Codec On Body Section-->    
+<div class="row" style="border: 3px solid skyblue; border-radius: 20px; margin: 10px 10px;">
+        <div class="col-md-6" style="padding: 0px 0px;">
+            <img class="image-fluid" style="padding:10px; max-width: 100%; height:100%" src="{{ url.thumbnail_url }}" alt="url.title">
+            <!--<h2> {{ url.title }} </h2>-->
+        </div>
+        <div class="col-md-6">
+          
+          <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Title</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> {{ url.title }}</td>
+                </tr>
+            </tbody>
+          </table>
+          
+
+          <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Author</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Size</th>
+                <th scope="col">Codec</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                        
+                <td> {{ url.author }}</td>
+                <td> {{ audio_duration }}</td>
+                <td> {{ best_audio_file_size }}</td>
+                <td> Audio (MP3)</td>
+                </tr>
+            </tbody>
+          </table>
+          
+          <!-- Display Download Audio Button-->
+          <form action="{{ url_for('downloadmp3') }}" method="POST">
+            <button type="submit" class="btn btn-download-audio">Download Audio</button>  
+          </form>
+            
+        </div>
+</div>
+</div>
+
+</body>
+</html>
