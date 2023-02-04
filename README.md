@@ -26,14 +26,14 @@ The user will be shown a friendly and polite error message if the URL is not val
 
 ## Tools Used
 
-- Flask and python
+- Flask and Python
 - Bootstrap
 - Pytube
 - Youtube Transcript API
 
 ## Deployment
 
-- [byvd](http://maonlineyoutubevideodownloader.el.r.appspot.com/) on Google Cloud Platform (GCP)
+- http://maonlineyoutubevideodownloader.el.r.appspot.com on Google Cloud Platform (GCP)
 
 
 ## How to Download
