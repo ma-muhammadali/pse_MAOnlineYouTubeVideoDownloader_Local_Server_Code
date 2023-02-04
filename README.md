@@ -1,4 +1,4 @@
-# Bold MA Online YouTube Video Downloader
+## MA Online YouTube Video Downloader
 
 ## Overview
 Do you Want to download any YouTube video, audio and video's transcript? No problem! Just type in the URL of the video and press the download button.
